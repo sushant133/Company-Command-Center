@@ -53,3 +53,4 @@ export const env = {
   smtpPass: process.env.SMTP_PASS || '',
   smtpFrom: process.env.SMTP_FROM || process.env.SMTP_USER || 'noreply@commandcenter.com',
 }
+
