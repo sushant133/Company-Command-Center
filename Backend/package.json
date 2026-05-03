@@ -15,7 +15,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "seed": "node scripts/seed-dev.js",
-    "prepare": "husky"
+    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production' && process.env.HUSKY !== '0') import('husky').then(h => h.default())\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
